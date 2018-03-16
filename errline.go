@@ -73,7 +73,7 @@ func Wrap(err error) error {
 		line = 0
 	}
 
-	file = getShortFilename(file)
+	//file = getShortFilename(file)
 	return &withFileLine{err, file, line}
 }
 
